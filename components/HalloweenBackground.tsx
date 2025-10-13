@@ -26,7 +26,7 @@ export default function HalloweenBackground() {
       speedY: number;
       emoji: string;
 
-      constructor() {
+      constructor(canvas: HTMLCanvasElement) {
         const emojis = ['🎃', '👻', '🍬', '🍭', '🦇', '🕷️', '🕸️'];
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
@@ -36,7 +36,7 @@ export default function HalloweenBackground() {
         this.emoji = emojis[Math.floor(Math.random() * emojis.length)];
       }
 
-      update() {
+      update(canvas: HTMLCanvasElement) {
         this.x += this.speedX;
         this.y += this.speedY;
 
@@ -54,7 +54,7 @@ export default function HalloweenBackground() {
     }
 
     for (let i = 0; i < particleCount; i++) {
-      particles.push(new Particle());
+      particles.push(new Particle(canvas));
     }
 
     function animate() {
@@ -62,7 +62,7 @@ export default function HalloweenBackground() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       particles.forEach((particle) => {
-        particle.update();
+        particle.update(canvas);
         particle.draw();
       });
 
