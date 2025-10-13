@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useRef } from 'react';
-import { GiCandyCorn, GiFire, GiPadlock, GiTwoCoins } from 'react-icons/gi';
+import { GiFire, GiPadlock, GiTwoCoins } from 'react-icons/gi';
 
 export default function Tokenomics() {
   const ref = useRef(null);
@@ -27,7 +27,8 @@ export default function Tokenomics() {
       description: 'LP tokens locked forever'
     },
     {
-      icon: GiCandyCorn,
+      icon: null,
+      emoji: '🍭',
       title: 'Tax',
       value: '0%',
       description: 'No buy/sell tax!'
@@ -69,7 +70,11 @@ export default function Tokenomics() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="bg-gradient-to-br from-primary-purple/20 to-primary-orange/20 border-2 border-primary-orange/50 rounded-xl p-6 hover-lift text-center"
             >
-              <item.icon className="text-5xl text-primary-orange mx-auto mb-4 animate-float" />
+              {item.icon ? (
+                <item.icon className="text-5xl text-primary-orange mx-auto mb-4 animate-float" />
+              ) : (
+                <div className="text-5xl text-primary-orange mx-auto mb-4 animate-float">{item.emoji}</div>
+              )}
               <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
               <div className="text-3xl font-bold text-primary-orange mb-2">{item.value}</div>
               <p className="text-sm text-gray-400">{item.description}</p>
