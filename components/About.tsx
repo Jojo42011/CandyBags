@@ -39,8 +39,8 @@ export default function About() {
             👻 About CandyBags 👻
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            CandyBags isn't just another memecoin – it's a Halloween celebration on the Solana blockchain! 
-            Born from the spirit of trick-or-treating, we're building the spookiest community in crypto.
+            CandyBags isn&apos;t just another memecoin – it&apos;s a Halloween celebration on the Solana blockchain! 
+            Born from the spirit of trick-or-treating, we&apos;re building the spookiest community in crypto.
           </p>
         </motion.div>
 
@@ -57,7 +57,7 @@ export default function About() {
             with a vision: to create a token that captures the true spirit of Halloween – fun, community, and endless treats!
           </p>
           <p className="text-lg text-gray-300 mb-4">
-            CandyBags was born from this vision, combining the excitement of memecoin culture with Halloween's 
+            CandyBags was born from this vision, combining the excitement of memecoin culture with Halloween&apos;s 
             playful and spooky atmosphere. Every transaction, every holder, every milestone is a celebration 
             of what makes crypto special: community and fun.
           </p>
