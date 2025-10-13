@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1A1A1A;
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+.creepster {
+  font-family: 'Creepster', cursive;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2E1B4D;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FF6B35;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9B5DE5;
+}
+
+/* Halloween particle background */
+.halloween-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* Glowing effect */
+.glow-text {
+  text-shadow: 0 0 10px #FF6B35, 0 0 20px #FF6B35, 0 0 30px #FF6B35;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Gradient backgrounds */
+.gradient-orange-purple {
+  background: linear-gradient(135deg, #FF6B35 0%, #9B5DE5 100%);
+}
+
+.gradient-purple-black {
+  background: linear-gradient(135deg, #2E1B4D 0%, #1A1A1A 100%);
+}
+
+/* Hover effects */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
+}
+
+/* Button styles */
+.btn-primary {
+  @apply bg-gradient-to-r from-primary-orange to-primary-purple text-white font-bold py-3 px-8 rounded-full hover:scale-105 transition-transform duration-300 cursor-pointer;
+}
+
+.btn-secondary {
+  @apply border-2 border-primary-orange text-primary-orange font-bold py-3 px-8 rounded-full hover:bg-primary-orange hover:text-white transition-all duration-300 cursor-pointer;
+}
+
+/* Wallet adapter styles */
+.wallet-adapter-button {
+  @apply bg-gradient-to-r from-primary-purple to-primary-orange !important;
+}
+
