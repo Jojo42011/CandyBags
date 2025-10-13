@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useRef } from 'react';
-import { GiCandyCanes, GiFire, GiLock, GiTwoCoins } from 'react-icons/gi';
+import { GiCandyCorn, GiFire, GiPadlock, GiTwoCoins } from 'react-icons/gi';
 
 export default function Tokenomics() {
   const ref = useRef(null);
@@ -21,13 +21,13 @@ export default function Tokenomics() {
       description: '500M tokens sent to the void'
     },
     {
-      icon: GiLock,
+      icon: GiPadlock,
       title: 'Liquidity',
       value: 'Locked',
       description: 'LP tokens locked forever'
     },
     {
-      icon: GiCandyCanes,
+      icon: GiCandyCorn,
       title: 'Tax',
       value: '0%',
       description: 'No buy/sell tax!'
