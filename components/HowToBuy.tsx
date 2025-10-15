@@ -12,25 +12,27 @@ export default function HowToBuy() {
       icon: FaWallet,
       title: 'Get a Wallet',
       description: 'Download Phantom or Solflare wallet from their official websites. Available for mobile and desktop.',
-      action: 'Download Phantom'
+      action: 'Download Phantom',
+      link: 'https://phantom.com/download'
     },
     {
       icon: FaCoins,
       title: 'Buy SOL',
       description: 'Purchase SOL from an exchange like Coinbase, Binance, or directly in Phantom wallet.',
-      action: 'Buy SOL'
+      action: 'Buy SOL',
+      link: 'https://phantom.com/tokens/solana'
     },
     {
       icon: FaExchangeAlt,
       title: 'Swap for CandyBags',
       description: 'Connect your wallet to Jupiter or Raydium and swap SOL for CandyBags using our contract address.',
-      action: 'Swap Now'
+      action: 'Coming Soon'
     },
     {
       icon: FaRocket,
       title: 'Join the Party!',
       description: 'Congratulations! You\'re now a CandyBags holder. Join our community and spread the Halloween spirit!',
-      action: 'Join Telegram'
+      action: 'Join Discord'
     },
   ];
 
@@ -72,9 +74,33 @@ export default function HowToBuy() {
                 <step.icon className="text-5xl text-primary-orange mb-4 animate-float" />
                 <h3 className="text-xl font-bold text-white mb-3">{step.title}</h3>
                 <p className="text-gray-400 mb-4">{step.description}</p>
-                <button className="w-full bg-primary-orange/20 border border-primary-orange text-primary-orange font-semibold py-2 px-4 rounded-lg hover:bg-primary-orange hover:text-white transition-all duration-300">
-                  {step.action}
-                </button>
+                {step.action === 'Join Discord' ? (
+                  <a 
+                    href="https://discord.gg/JKrmHYQ2Hx"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-primary-orange/20 border border-primary-orange text-primary-orange font-semibold py-2 px-4 rounded-lg hover:bg-primary-orange hover:text-white transition-all duration-300 block text-center"
+                  >
+                    {step.action}
+                  </a>
+                ) : step.action === 'Coming Soon' ? (
+                  <button className="w-full bg-gray-600/20 border border-gray-600 text-gray-400 font-semibold py-2 px-4 rounded-lg cursor-not-allowed">
+                    {step.action}
+                  </button>
+                ) : step.link ? (
+                  <a 
+                    href={step.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-primary-orange/20 border border-primary-orange text-primary-orange font-semibold py-2 px-4 rounded-lg hover:bg-primary-orange hover:text-white transition-all duration-300 block text-center"
+                  >
+                    {step.action}
+                  </a>
+                ) : (
+                  <button className="w-full bg-primary-orange/20 border border-primary-orange text-primary-orange font-semibold py-2 px-4 rounded-lg hover:bg-primary-orange hover:text-white transition-all duration-300">
+                    {step.action}
+                  </button>
+                )}
               </div>
 
               {/* Arrow (desktop only) */}

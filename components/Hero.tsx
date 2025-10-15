@@ -63,13 +63,13 @@ export default function Hero() {
           transition={{ delay: 0.9, duration: 0.8 }}
           className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
         >
-          <button className="btn-primary flex items-center justify-center space-x-2">
+          <button className="bg-gray-600/20 border border-gray-600 text-gray-400 font-bold py-3 px-8 rounded-full cursor-not-allowed flex items-center justify-center space-x-2">
             <FaRocket />
-            <span>Buy Now</span>
+            <span>Coming Soon</span>
           </button>
-          <button className="btn-secondary flex items-center justify-center space-x-2">
+          <button className="bg-gray-600/20 border border-gray-600 text-gray-400 font-bold py-3 px-8 rounded-full cursor-not-allowed flex items-center justify-center space-x-2">
             <FaChartLine />
-            <span>View Chart</span>
+            <span>Coming Soon</span>
           </button>
         </motion.div>
 

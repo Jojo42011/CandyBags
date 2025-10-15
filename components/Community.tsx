@@ -62,37 +62,6 @@ export default function Community() {
           ))}
         </div>
 
-        {/* Community Stats */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="bg-secondary-darkPurple/50 backdrop-blur-md border-2 border-primary-orange/30 rounded-2xl p-8 mb-12"
-        >
-          <h3 className="text-3xl font-bold text-center text-primary-orange mb-8 creepster">
-            Community Power
-          </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {[
-              { label: 'Twitter Followers', value: '???K', emoji: '🐦' },
-              { label: 'Telegram Members', value: '???K', emoji: '💬' },
-              { label: 'Discord Members', value: '???K', emoji: '🎮' },
-              { label: 'Total Holders', value: '???', emoji: '👥' },
-            ].map((stat, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, delay: 0.6 + index * 0.1 }}
-                className="text-center"
-              >
-                <div className="text-4xl mb-2">{stat.emoji}</div>
-                <div className="text-3xl font-bold text-primary-orange mb-1">{stat.value}</div>
-                <div className="text-sm text-gray-400">{stat.label}</div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
 
       </div>
     </section>
