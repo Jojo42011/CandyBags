@@ -125,7 +125,7 @@ export default function Tokenomics() {
             </h4>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               <code className="text-sm text-gray-300 bg-gray-800 px-4 py-2 rounded break-all text-center">
-                [Your Solana Token Address Here]
+                HfqExokfkHeB72aDnCoqNyqNXrmNcE1MCVN6GbUbBAGS
               </code>
               <button className="bg-primary-orange hover:bg-primary-purple text-white font-bold py-2 px-6 rounded-lg transition-colors duration-300">
                 Copy

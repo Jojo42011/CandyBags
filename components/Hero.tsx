@@ -63,14 +63,24 @@ export default function Hero() {
           transition={{ delay: 0.9, duration: 0.8 }}
           className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
         >
-          <button className="bg-gray-600/20 border border-gray-600 text-gray-400 font-bold py-3 px-8 rounded-full cursor-not-allowed flex items-center justify-center space-x-2">
+          <a 
+            href="https://phantom.com/tokens/solana/HfqExokfkHeB72aDnCoqNyqNXrmNcE1MCVN6GbUbBAGS?referralId=m5oorh8mr1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary flex items-center justify-center space-x-2"
+          >
             <FaRocket />
-            <span>Coming Soon</span>
-          </button>
-          <button className="bg-gray-600/20 border border-gray-600 text-gray-400 font-bold py-3 px-8 rounded-full cursor-not-allowed flex items-center justify-center space-x-2">
+            <span>Swap Now</span>
+          </a>
+          <a 
+            href="https://phantom.com/tokens/solana/HfqExokfkHeB72aDnCoqNyqNXrmNcE1MCVN6GbUbBAGS?referralId=m5oorh8mr1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-secondary flex items-center justify-center space-x-2"
+          >
             <FaChartLine />
-            <span>Coming Soon</span>
-          </button>
+            <span>View Chart</span>
+          </a>
         </motion.div>
 
         {/* Live Stats */}
@@ -81,10 +91,10 @@ export default function Hero() {
           className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto"
         >
           {[
-            { label: 'Market Cap', value: '$???K', icon: '💰' },
-            { label: 'Holders', value: '???', icon: '👻' },
-            { label: 'Burned', value: '???%', icon: '🔥' },
-            { label: 'Liquidity', value: 'Locked', icon: '🔒' },
+            { label: 'Market Cap', value: '$9.2K', icon: '💰' },
+            { label: 'Holders', value: '17', icon: '👻' },
+            { label: 'Volume 24h', value: '$1.9K', icon: '📈' },
+            { label: 'Supply', value: '1B', icon: '🍬' },
           ].map((stat, index) => (
             <div
               key={index}
