@@ -6,7 +6,7 @@ import { GiSpiderWeb } from 'react-icons/gi';
 export default function Footer() {
   const socialLinks = [
     { icon: FaTwitter, href: 'https://x.com/BagLords21', label: 'Twitter' },
-    { icon: FaDiscord, href: 'https://discord.gg/2gH4Ysg27z', label: 'Discord' },
+    { icon: FaDiscord, href: 'https://discord.gg/kAzq2gszyV', label: 'Discord' },
   ];
 
   return (

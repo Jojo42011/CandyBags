@@ -19,7 +19,7 @@ export default function Community() {
       name: 'Discord',
       icon: FaDiscord,
       description: 'Hang out with the spookiest community in crypto!',
-      link: 'https://discord.gg/2gH4Ysg27z',
+      link: 'https://discord.gg/kAzq2gszyV',
       color: 'hover:bg-indigo-500'
     },
   ];

@@ -76,7 +76,7 @@ export default function HowToBuy() {
                 <p className="text-gray-400 mb-4">{step.description}</p>
                 {step.action === 'Join Discord' ? (
                   <a 
-                    href="https://discord.gg/JKrmHYQ2Hx"
+                    href="https://discord.gg/kAzq2gszyV"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full bg-primary-orange/20 border border-primary-orange text-primary-orange font-semibold py-2 px-4 rounded-lg hover:bg-primary-orange hover:text-white transition-all duration-300 block text-center"
