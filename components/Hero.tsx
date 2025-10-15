@@ -91,9 +91,9 @@ export default function Hero() {
           className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto"
         >
           {[
-            { label: 'Market Cap', value: '$20K', icon: '💰' },
-            { label: 'Holders', value: '129', icon: '👻' },
-            { label: 'Volume 24h', value: '$19K', icon: '📈' },
+            { label: 'Market Cap', value: '$37K', icon: '💰' },
+            { label: 'Holders', value: '188', icon: '👻' },
+            { label: 'Volume 24h', value: '$40K', icon: '📈' },
             { label: 'Supply', value: '1B', icon: '🍬' },
           ].map((stat, index) => (
             <div
