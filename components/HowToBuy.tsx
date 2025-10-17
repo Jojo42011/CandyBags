@@ -26,7 +26,8 @@ export default function HowToBuy() {
       icon: FaExchangeAlt,
       title: 'Swap for CandyBags',
       description: 'Connect your wallet to Jupiter or Raydium and swap SOL for CandyBags using our contract address.',
-      action: 'Coming Soon'
+      action: 'Swap Now',
+      link: 'https://phantom.com/tokens/solana/HfqExokfkHeB72aDnCoqNyqNXrmNcE1MCVN6GbUbBAGS?referralId=m5oorh8mr1'
     },
     {
       icon: FaRocket,
